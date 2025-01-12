@@ -1,0 +1,9 @@
+document.getElementById('addItem').addEventListener('click', function() {
+    const newItem = document.getElementById('newItem').value;
+    if (newItem) {
+        const li = document.createElement('li');
+        li.textContent = newItem;
+        document.getElementById('itemList').appendChild(li);
+        document.getElementById('newItem').value = '';
+    }
+});
